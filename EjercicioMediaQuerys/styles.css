@@ -1,0 +1,46 @@
+.contenedor {
+    display: flex;
+    padding: 0.3rem;
+    height: 10rem;
+    
+}
+
+.lateral {
+    background-color: brown;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.principal {
+    
+    background-color: coral;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: right;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 5rem;
+    }
+    .lateral {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 6;
+        justify-content: space-around;
+        padding-top: 1rem;
+        
+        }
+
+    .principal {
+        justify-content: center;
+       
+    }
+}
